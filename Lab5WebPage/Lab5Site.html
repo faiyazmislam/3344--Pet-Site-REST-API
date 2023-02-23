@@ -1,0 +1,217 @@
+﻿<!-- FAIYAZ ISLAM - LAB 5 - WEB API - WEB PAGE -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pet API Site</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="Lab5Script.js"></script>
+    <link href="Lab5Style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <br />
+        <header style="color:white;" class="site-title">Pet API Site</header><br />
+
+        <a style="color:white;" href="./index.html">Main Site</a><br />
+        <br />
+
+    </div>
+
+    <br />
+
+    <div class="halfpageDiv">
+
+        <div class="boxes" id="AddPetDiv">
+
+            <header class="DivHeader">Add a Pet</header>
+
+            <div class="PetInfoForm">
+
+                Type:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <select class="txtbx" id="addPetDDL">
+                    <option value="Bird">Bird</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                </select><br /><br />
+
+                Name:  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <input class="txtbx" id="addName" type="text" /><br /><br />
+                Birthdate: &nbsp; &nbsp; <input class="txtbx" id="addBirthdate" type="date" max="3000-01-01" onfocus="this.max=new Date().toISOString().split('T')[0]" /><br /><br />
+
+                Availability:
+                <select class="txtbx" id="addStatusDDL">
+                    <option value="Available">Available</option>
+                    <option value="Adopted">Adopted</option>
+                </select><br /><br />
+
+                Description:  <input class="txtbx" id="addDesc" type="text" /><br /><br />
+                ImageURL: <input class="txtbx" id="addURL" type="text" /><br /><br />
+
+            </div>
+
+            <button class="btn" id="addPetBtn">Add Pet</button><br />
+
+        </div>
+
+        <br />
+
+        <div class="boxes" id="UpdatePetDiv">
+
+            <header class="DivHeader">Update a Pet</header>
+
+            <div class="PetInfoForm">
+
+                Adoption ID:  <input class="txtbx" id="UpdateAdoptionID" type="text" /><br /><br />
+
+                Type:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <select class="txtbx" id="updateTypeDDL">
+                    <option value="Bird">Bird</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                </select><br /><br />
+
+                Name: &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <input id="updateName" type="text" /><br /><br />
+                Birthdate:  &nbsp; &nbsp; <input class="txtbx" id="updateBirthdate" type="date" max="3000-01-01" onfocus="this.max=new Date().toISOString().split('T')[0]" /><br /><br />
+
+                Availability:
+                <select class="txtbx" id="updateStatusDDL">
+                    <option value="Available">Available</option>
+                    <option value="Adopted">Adopted</option>
+                </select><br /><br />
+
+                Description:   <input class="txtbx" id="updateDesc" type="text" /><br /><br />
+                ImageURL:      <input class="txtbx" id="updateURL" type="text" /><br /><br />
+
+
+            </div>
+
+            <button class="btn" id="updatePetBtn">Update Pet</button><br />
+
+        </div>
+
+        <br />
+
+        <div class="boxes" id="AdoptPetDiv">
+
+            <header class="DivHeader">Adopt a Pet</header>
+
+            <div class="PetInfoForm">
+
+                Adoption ID:  &nbsp;  &nbsp;  &nbsp;  <input class="txtbx" id="AdoptPetID" type="text" /><br /><br />
+
+                Customer Name:  <input id="CustomerNameTxt" type="text" /><br /><br />
+
+            </div>
+
+            <button class="btn" id="adoptPetBtn">Adopt Pet</button><br />
+
+        </div>
+
+        <br />
+
+        <div class="boxes" id="DeletePetDiv">
+
+            <header class="DivHeader">Delete a Pet</header>
+
+            Pet Adoption ID: <input id="deletePetID" type="text" /><br /><br />
+
+            <button class="btn" id="deletePetBtn">Delete Pet</button><br />
+
+        </div>
+
+        <br />
+
+    </div>
+
+    <br />
+
+    <div style="text-align:center;">
+        <span id="search-title">------------------------------------------------------------SEARCHES------------------------------------------------------------</span>
+    </div>
+
+    <br />
+
+    <div class="halfpageDiv">
+
+        <div class="boxes" id="GetAllPets">
+
+            <header class="DivHeader">View All Pets</header>
+
+            <button class="btn" id="ViewAllBtn">View</button>
+
+        </div>
+
+        <br />
+
+        <div class="boxes" id="SearchPetID">
+
+            <header class="DivHeader">Search by ID</header>
+
+            <input type="text" id="IDSearchTxt" />
+
+            <button class="btn" id="IDSearchBtn">Search</button>
+
+        </div>
+
+        <br />
+
+        <div class="boxes" id="SearchPetType">
+
+            <header class="DivHeader">Search by Type</header>
+
+            <select class="txtbx" id="typeSearchDDL">
+                <option value="Bird">Bird</option>
+                <option value="Cat">Cat</option>
+                <option value="Dog">Dog</option>
+            </select>
+
+            <button class="btn" id="TypeSearchBtn">Search</button>
+
+        </div>
+
+        <br />
+
+        <div class="boxes" id="SearchPetAge">
+
+            <header class="DivHeader">Search by Age</header>
+
+            <input type="text" id="ageSearchTxt" />
+
+            <button class="btn" id="AgeSearchBtn">Search</button>
+
+        </div>
+
+        <br />
+
+    </div>
+
+    <br />
+
+    <div style="text-align:center;">
+        <span id="search-title">------------------------------------------------------------PET DISPLAY------------------------------------------------------------</span>
+    </div>
+
+    <br />
+
+    <div id="petDisplaySection" class="halfpageDiv">
+
+        <div id="petDisplayDiv">
+
+
+
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <br />
+
+    <footer>Faiyaz Islam - Temple University - 2022</footer>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaiyazIslamLab5", "FaiyazIslamLab5\FaiyazIslamLab5.csproj", "{1D7466B8-78C1-4641-9328-B8753FBC833C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5WebPage", "Lab5WebPage\Lab5WebPage.csproj", "{BD4C64BB-DFEB-4C04-B0CB-B76C328FBE11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D7466B8-78C1-4641-9328-B8753FBC833C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D7466B8-78C1-4641-9328-B8753FBC833C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D7466B8-78C1-4641-9328-B8753FBC833C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D7466B8-78C1-4641-9328-B8753FBC833C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD4C64BB-DFEB-4C04-B0CB-B76C328FBE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD4C64BB-DFEB-4C04-B0CB-B76C328FBE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD4C64BB-DFEB-4C04-B0CB-B76C328FBE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD4C64BB-DFEB-4C04-B0CB-B76C328FBE11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5768CFB3-FF4E-4C2E-A80A-EF0511974A19}
+	EndGlobalSection
+EndGlobal
